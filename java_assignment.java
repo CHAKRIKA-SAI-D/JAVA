@@ -185,3 +185,113 @@ class HelloWorld {
 #output
 5
 120
+______________________________________________________________________________________________
+11. ava Program to Generate Multiplication Table
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(x+"x"+i+"="+x*i);
+        }
+    }
+}
+#output
+5
+5x1=5
+5x2=10
+5x3=15
+5x4=20
+5x5=25
+5x6=30
+5x7=35
+5x8=40
+5x9=45
+5x10=50
+___________________________________________________________________________________
+12. Java Program to Display Fibonacci Series
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int f1=0;
+        int f2=1;
+        if(x==1){
+            System.out.println(f1);
+        }else if(x==2){
+            System.out.println(f1+" "+f2);
+        }else{
+            System.out.print(f1+" "+f2+" ");
+            for(int i=3;i<=x;i++){
+                int f3=f1+f2;
+                System.out.print(f3+" ");
+                f1=f2;
+                f2=f3;
+            }
+        }
+    }
+}
+#output
+10
+0 1 1 2 3 5 8 13 21 34 
+___________________________________________________________________
+13. Java Program to Find GCD of two Numbers
+import java.util.*;
+class Gcd{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int gcd=1;
+        for(int i=1;i<=x && i<=y;i++){
+            if(x%i==0 && y%i==0){
+                gcd=i;
+            }
+        }
+        System.out.println("The gcd is : "+gcd);
+    }
+}
+#output
+81
+153
+The gcd is : 9
+_______________________________________________________________
+14. Java Program to Find LCM of two Numbers
+import java.util.*;
+class Lcm{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int m=(x>y)?x:y;
+        while(true){
+            if(m%x==0 && m%y==0){
+                System.out.print(m);
+                break;
+            }
+            m++;
+        }
+    }
+}
+#output
+2
+3
+6
+__________________________________________________________________
+15. Java Program to Display Alphabets (A to Z) using loop
+import java.util.*;
+class Alpha{
+    public static void main(String[] args) {
+        int c=65;
+        for(int i=1;i<=26;i++){
+            System.out.print((char)c+" ");
+            c++;
+        }
+    }
+}
+#output:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+____________________________________________________________________
+
