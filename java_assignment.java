@@ -294,4 +294,46 @@ class Alpha{
 #output:
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
 ____________________________________________________________________
+16. Java Program to Count Number of Digits in an Integer
+  import java.util.*;
+class Count{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int count=0;
+		while(x>0){
+			x=x/10;
+			x=(int) x;
+			count++;
+		}
+		System.out.print("The length of digit is"+count);
+	}
+}
+#output
+100001
+The length of digit is6
+_____________________________________________________________________________
+18. Java Program to Calculate the Power of a Number
+import java.util.*;
+class Power{
+	public static void main(String[] args){
+		Scanner sc =new Scanner(System.in);
+		System.out.print("Enterthe number");
+		int num=sc.nextInt();
+		System.out.println("Enter the power:");
+		int po=sc.nextInt();
+		int res=1;
+		for (int i=0;i<po;i++){
+			res=res*num;
+		}
+		System.out.println("The result is :" +res);
+	}
+}
+#output
+Enterthe number2
+Enter the power:
+30
+The result is :1073741824
+_______________________________________________________________________________
+19. Java Program to Check Palindrome
 
