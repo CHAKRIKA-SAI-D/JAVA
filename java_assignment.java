@@ -336,4 +336,35 @@ Enter the power:
 The result is :1073741824
 _______________________________________________________________________________
 19. Java Program to Check Palindrome
+import java.util.*;
+class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int [] a=new int[n];
+        for(int i=0;i<n;i++){
+            int x=sc.nextInt();
+            a[i]=x;
+        }
+        int flag=0;
+        for(int i=0;i<n;i++){
+            if(a[i]!=a[n-i-1]){
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0){
+            System.out.print("Palindrome");
+        }else{
+            System.out.print("NO");
+        }
+    }
+}
+#output
+3
+1
+2
+1
+Palindrome
+-----------------------------------------------------------------------------------------------------------
 
